@@ -6,7 +6,7 @@ $(document).ready(function() {
     let total = 0;
     window.setInterval(function() {
       total += perSecond
-      $('#runningTotal').text(total);
+      $('#runningTotal').text(`$${total.toFixed(2)}`);
     }, 1000);
   });
 
